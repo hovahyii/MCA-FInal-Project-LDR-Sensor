@@ -1,6 +1,6 @@
 # LDR Sensor with ESP8266-12E + Blynk
 
-! [diagram](https://github.com/hovahyii/MCA-Final-Project-LDR-Sensor/circuit.jpg)
+! [diagram](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/circuit.jpg)
 
 This project uses the Blynk library to control a servo and an LED through a smartphone app. The code defines various constants and includes the necessary libraries for using Blynk, Servo, and ESP8266WiFi.
 
@@ -34,7 +34,7 @@ This project uses the Blynk library to control a servo and an LED through a smar
 2. Sign up using your email
 3. Download Blynk IoT from [PlayStore](https://play.google.com/store/apps/details?id=cloud.blynk) or [App Store](https://apps.apple.com/us/app/blynk-iot/id1559317868) in your phone.
 4. Once done, setup up a prototype in Blynk IoT as shown in the figure below:
-![figure](https://github.com/hovahyii/MCA-Final-Project-LDR-Sensor/control.jpg)
+![figure](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/control.jpg)
 5. Setup the Datastream for LED and LDR sensor respectively
    - V1 for LDR (change the MAX value to 300)
    - V2 for LED
