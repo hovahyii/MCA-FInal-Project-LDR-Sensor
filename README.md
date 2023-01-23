@@ -8,8 +8,10 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 <br/>
 
 ## Author
-- DAVEIYN A/L MUTHU SELWANATHAN TB21011
 - JEHOVAH YII ZUI HON TB20091
+
+## Teammate
+- DAVEIYN A/L MUTHU SELWANATHAN TB21011
 
 
 <br/>
