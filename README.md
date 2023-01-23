@@ -2,7 +2,7 @@
 
 ![diagram](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/circuit.jpg)
 
-This project uses the Blynk library to control a servo and an LED through a smartphone app. The code defines various constants and includes the necessary libraries for using Blynk, Servo, and ESP8266WiFi.
+This project involves using an LDR sensor and a button in a Blynk app to control a servo motor and an LED. The LDR sensor is used to detect the ambient light level and open or close the servo motor based on the sensor's reading. The button in the Blynk app is used to turn an LED on or off. This project demonstrates the ability to remotely control physical devices using a Blynk app and an ESP8266 microcontroller.
 
 
 <br/>
