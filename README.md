@@ -1,6 +1,6 @@
 # LDR Sensor with ESP8266-12E + Blynk
 
-! [diagram](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/circuit.jpg)
+![diagram](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/circuit.jpg)
 
 This project uses the Blynk library to control a servo and an LED through a smartphone app. The code defines various constants and includes the necessary libraries for using Blynk, Servo, and ESP8266WiFi.
 
