@@ -33,8 +33,10 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 1. Go to [https://blynk.io/](https://blynk.io/)
 2. Sign up using your email
 3. Download Blynk IoT from [PlayStore](https://play.google.com/store/apps/details?id=cloud.blynk) or [App Store](https://apps.apple.com/us/app/blynk-iot/id1559317868) in your phone.
-4. Once done, setup up a prototype in Blynk IoT as shown in the figure below:
-![figure](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/control.jpg)
+4. Once done, setup up a prototype in Blynk IoT as shown in the figure below: 
+<br/>
+![figure](https://raw.githubusercontent.com/hovahyii/MCA-Final-Project-LDR-Sensor/main/control.jpg =80x160)
+<br/>
 5. Setup the Datastream for LED and LDR sensor respectively
    - V1 for LDR (change the MAX value to 300)
    - V2 for LED
