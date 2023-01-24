@@ -10,7 +10,10 @@ const char auth[] = "nK14ecqsqPy8vqWArXMGgdlkBbMYG9yS";
 
 Servo servo;
 const int ldrPin = A0;
-int ledPin = 13; // GPIO13---D7 of NodeMCU
+int ledWhitePin = 12; // GPIO13---D6 of NodeMCU
+int ledGreenPin = 13; // GPIO13---D7 of NodeMCU
+int ledBluePin = 14; // GPIO13---D5 of NodeMCU
+
 
 BLYNK_WRITE(V1) {
   int pinValue = param.asInt(); 
@@ -20,11 +23,62 @@ BLYNK_WRITE(V1) {
 BLYNK_WRITE(V2) {
   int buttonValue = param.asInt();
   if (buttonValue == 1) {
-    digitalWrite(ledPin, HIGH); 
+    digitalWrite(ledGreenPin, HIGH); 
   } else {
-    digitalWrite(ledPin, LOW); 
+    digitalWrite(ledGreenPin, LOW); 
   }
 }
+
+
+BLYNK_WRITE(V3) {
+  int buttonValue = param.asInt();
+  if (buttonValue == 1) {
+    digitalWrite(ledWhitePin, HIGH); 
+  } else {
+    digitalWrite(ledWhitePin, LOW); 
+  }
+}
+
+BLYNK_WRITE(V4) {
+  int buttonValue = param.asInt();
+  if (buttonValue == 1) {
+    digitalWrite(ledBluePin, HIGH); 
+  } else {
+    digitalWrite(ledBluePin, LOW); 
+  }
+}
+
+BLYNK_WRITE(V13) {
+  int buttonValue = param.asInt();
+  if (buttonValue == 1) {
+  // Code to run the servo or perform other actions
+      servo.write(0);
+      servo.write(180);
+      digitalWrite(ledWhitePin, HIGH); 
+      digitalWrite(ledGreenPin, HIGH); 
+      digitalWrite(ledBluePin, HIGH); 
+  }
+}
+
+BLYNK_WRITE(V14) {
+  int buttonValue = param.asInt();
+  if (buttonValue == 1) {
+  // Code to pause the servo or perform other actions
+  }
+}
+
+BLYNK_WRITE(V15) {
+  int buttonValue = param.asInt();
+  if (buttonValue == 1) {
+  // Code to stop the servo or perform other actions
+      servo.write(0);
+    digitalWrite(ledWhitePin, LOW); 
+    digitalWrite(ledGreenPin, LOW); 
+    digitalWrite(ledBluePin, LOW); 
+  }
+}
+
+
 
 void setup() {
     Serial.begin(9600);
@@ -43,7 +97,9 @@ void setup() {
   servo.write(0);
 
   // set the led pin as output
-  pinMode(ledPin, OUTPUT);
+  pinMode(ledGreenPin, OUTPUT);
+  pinMode(ledWhitePin, OUTPUT);
+  pinMode(ledBluePin, OUTPUT);
 
   delay(2000);
 }
@@ -55,6 +111,7 @@ void loop() {
   // Send the LDR value to the Blynk Timeline
   Blynk.virtualWrite(V1, ldrValue);
     Serial.println(ldrValue);
+
 
   if (ldrValue < 14) {
     servo.write(0);
