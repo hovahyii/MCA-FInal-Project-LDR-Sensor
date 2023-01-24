@@ -36,8 +36,8 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 <br/>
 
 ## Important
-> Make sure you use your own mobile hotspot, as university WIFI and public WIFI block the SSID connection
-> The ssid is your mobile hotspot Network name and the pass is your mobile hotspot password
+> Make sure you use your own mobile hotspot, as university WIFI and public WIFI block the SSID connection.  <br/>
+> The ssid is your mobile hotspot Network name and the pass is your mobile hotspot password.
 
 <br/>
 
@@ -47,9 +47,11 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 3. Download Blynk IoT from [PlayStore](https://play.google.com/store/apps/details?id=cloud.blynk) or [App Store](https://apps.apple.com/us/app/blynk-iot/id1559317868) in your phone.
 4. Create a prototype as shown in figure below:
    <br/>
+   <br/>
       <img src="/main.jpg" width="250">
    <br/>
 5. Once done, setup up the components: 
+   <br/>
    <br/>
       <img src="/control.jpg" width="250">
    <br/>
@@ -79,7 +81,7 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 | G           | Breadboard (-)            |
 | Vin         | Breadboard (+)            |
 
-> The other left behind leg are connected to the ground
+> The other left behind legs are connected to the ground
 
 <br/>
 
