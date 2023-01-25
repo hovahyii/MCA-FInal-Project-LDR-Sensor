@@ -6,7 +6,7 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-const char auth[] = "nK14ecqsqPy8vqWArXMGgdlkBbMYG9yS";
+const char auth[] = "nK14ecqsqPy8vqWArXMGgdlkBbMYG9yS"; 
 
 Servo servo;
 const int ldrPin = A0;
@@ -112,11 +112,12 @@ void loop() {
   Blynk.virtualWrite(V1, ldrValue);
     Serial.println(ldrValue);
 
-
-  if (ldrValue < 14) {
+  
+  if (ldrValue <= 13) {
     servo.write(0);
     delay(1000);
     Serial.println("Servo Closed");
+    //
   } else {
      servo.write(90);
     delay(1000);

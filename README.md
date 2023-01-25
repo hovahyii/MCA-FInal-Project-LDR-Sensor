@@ -1,6 +1,6 @@
 # LDR Sensor with ESP8266-12E + Blynk IoT
 
-<img src="/circuit.jpg">
+<img src="/overall.jpg">
 
 This project involves using an LDR sensor and a button in a Blynk app to control a servo motor and an LED. The LDR sensor is used to detect the ambient light level and open or close the servo motor based on the sensor's reading. The button in the Blynk app is used to turn an LED on or off. This project demonstrates the ability to remotely control physical devices using a Blynk app and an ESP8266 microcontroller.
 
@@ -26,6 +26,7 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 - 1 X LDR Sensor
 - 1 X ESP8266-12E
 - Blynk IoT
+- Proteus 8 Professional
 
 
 <br/>
@@ -69,6 +70,9 @@ This project involves using an LDR sensor and a button in a Blynk app to control
 <br/>
 
 ## Connection
+
+<img src="/circuit.png">
+
 | ESP8266     | Components                |
 | ----------- | -----------               |
 | D4          | Servo - orange            |
